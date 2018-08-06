@@ -1,7 +1,7 @@
 {
   "name": "sequelize-db2",
   "description": "Multi dialect ORM for Node.JS",
-  "version": "0.0.1 beta1",
+  "version": "0.0.1-b1",
   "author": "Rouh Alavi <alavi.s.r@gmail.com>",
   "contributors": [
     "Rouh Alavi <alavi.s.r@gmail.com>",
@@ -16,7 +16,7 @@
     "url": "https://github.com/hAlavi/sequelize-db2.git"
   },
   "bugs": {
-    "url": "https://github.com/hAlavi/sequelize-db2/issues"
+    "url": "https://github.com/hAlavi/sequelize-db2s/issues"
   },
   "dependencies": {
     "bluebird": "^3.5.0",
