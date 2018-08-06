@@ -1,9 +1,10 @@
 {
-  "name": "sequelize",
+  "name": "sequelize-db2",
   "description": "Multi dialect ORM for Node.JS",
-  "version": "5.0.0-beta.10",
-  "author": "Sascha Depold <sascha@depold.com>",
+  "version": "0.0.1 beta1",
+  "author": "Rouh Alavi <alavi.s.r@gmail.com>",
   "contributors": [
+    "Rouh Alavi <alavi.s.r@gmail.com>",
     "Sascha Depold <sascha@depold.com>",
     "Jan Aagaard Meier <janzeh@gmail.com>",
     "Daniel Durante <me@danieldurante.com>",
@@ -12,10 +13,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/sequelize/sequelize.git"
+    "url": "https://github.com/hAlavi/sequelize-db2.git"
   },
   "bugs": {
-    "url": "https://github.com/sequelize/sequelize/issues"
+    "url": "https://github.com/hAlavi/sequelize-db2/issues"
   },
   "dependencies": {
     "bluebird": "^3.5.0",
@@ -79,6 +80,7 @@
     "postgresql",
     "postgres",
     "mssql",
+    "db2",
     "orm",
     "nodejs",
     "object relational mapper"
@@ -102,8 +104,10 @@
     "test-unit-postgres-native": "cross-env DIALECT=postgres-native npm run test-unit",
     "test-unit-sqlite": "cross-env DIALECT=sqlite npm run test-unit",
     "test-unit-mssql": "cross-env DIALECT=mssql npm run test-unit",
+    "test-unit-db2": "cross-env DIALECT=db2 npm run test-unit",
     "test-unit-all": "npm run test-unit-mysql && npm run test-unit-postgres && npm run test-unit-postgres-native && npm run test-unit-mssql && npm run test-unit-sqlite",
     "test-integration": "mocha --require scripts/mocha-bootload --globals setImmediate,clearImmediate --ui tdd --exit --check-leaks --colors -t 30000 --reporter spec \"test/integration/**/*.test.js\"",
+    "test-integration-db2": "cross-env DIALECT=db2 npm run test-integration",
     "test-integration-mysql": "cross-env DIALECT=mysql npm run test-integration",
     "test-integration-postgres": "cross-env DIALECT=postgres npm run test-integration",
     "test-integration-postgres-native": "cross-env DIALECT=postgres-native npm run test-integration",
@@ -114,6 +118,7 @@
     "test-sqlite": "cross-env DIALECT=sqlite npm test",
     "test-postgres": "cross-env DIALECT=postgres npm test",
     "test-pgsql": "npm run test-postgres",
+    "test-db2": "npm run test-db2",
     "test-postgres-native": "cross-env DIALECT=postgres-native npm test",
     "test-postgresn": "npm run test-postgres-native",
     "test-mssql": "cross-env DIALECT=mssql npm test",
